@@ -1,0 +1,66 @@
+.container#main {
+  align-items: center;
+}
+.main {
+  margin-top: 60px;
+}
+.main-conteudo h1 {
+  font-size: 4.5rem;
+  color: var(--c1);
+}
+.main-conteudo p {
+  font-size: 1.5rem;
+  color: var(--c5);
+  margin-top: 40px;
+}
+.main-conteudo span {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.main-conteudo span::before {
+  content: "";
+  background-image: url("../img/decoracao.svg");
+  position: absolute;
+  width: 37px;
+  height: 36px;
+  left: -45px;
+}
+
+@media (max-width: 1000px) {
+  .container#main {
+    gap: 80px;
+  }
+  .main-conteudo h1 {
+    font-size: 3rem;
+  }
+  .main-conteudo span::before {
+    height: 18px;
+    top: 20px;
+  }
+}
+@media (max-width: 800px){
+  .container#main{
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .main-conteudo h1{
+    font-size: 2rem;
+  }
+  .main-conteudo span::before {
+    height: 18px;
+    top: -20px;
+    left: 0px;
+  }
+}
+@media (max-width: 460px){
+  .main{
+    margin-top: 20px;
+  }
+  .main img{
+      display: none;
+  }
+  .container#main{
+      grid-template-columns: 1fr;
+  }
+}

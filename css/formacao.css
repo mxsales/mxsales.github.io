@@ -1,0 +1,119 @@
+.formacao-bg {
+  background-color: var(--c2);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.formacao-bg h2 {
+  font-size: 8rem;
+  color: var(--c0);
+  text-transform: uppercase;
+  line-height: 1;
+}
+.formacao-conteudo > p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  max-width: 45ch;
+  color: var(--c7);
+  padding: 20px 0;
+}
+.formacao-conteudo > p strong {
+  color: var(--c13);
+}
+.graduacoes{
+  margin-top: 60px;
+  padding: 16px 20px;
+  background-color: black;
+  color: var(--c7);
+  max-width: max-content;
+}
+.graduacoes span{
+  font-size: 1rem;
+}
+.graduacoes h3{
+  font-weight: bold;
+  color: var(--c12);
+  margin-top: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.graduacoes h3::before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 16px;
+  background-color: #f24f1a;
+  left: -26px;
+}
+.cursos,
+.idiomas{
+  margin-top: 60px;
+}
+.cursos h3,
+.idiomas h3{
+  color: var(--c6);
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.cursos p,
+.idiomas p{
+  color: var(--c12);
+  font-size: 1.125rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.cursos span,
+.idiomas span{
+  color: var(--c6);
+  font-size: 1.125rem;
+}
+.cursos div:not(first-child){
+  margin-top: 20px;
+}
+.cursos-item:nth-of-type(1) p::before{
+  content: "";
+  background-image: url("../img/cursos.svg");
+  position: absolute;
+  left: -36px;
+  width: 24px;
+  height: 24px;
+}
+.cursos-item{
+  display: flex;
+  justify-content: space-between;
+  max-width: 380px;
+}
+.idiomas p::before{
+  content: "";
+  background-image: url("../img/idiomas.svg");
+  position: absolute;
+  left: -36px;
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 800px) {
+  #form .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .formacao-bg {
+    background-color: var(--c2);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .formacao-bg h2 {
+    color: var(--c0);
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+  .formacao-bg h2 br,
+  .cursos-item:nth-of-type(1) p::before,
+  .idiomas p::before {
+    display: none;
+  }
+}

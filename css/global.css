@@ -1,0 +1,46 @@
+:root{
+  --c0: #000000;
+  --c1: #0E0E0E;
+  --c2: #1A1A1A;
+  --c3: #2E2E2E;
+  --c4: #404040;
+  --c5: #595959;
+  --c6: #717171;
+  --c7: #9C9C9C;
+  --c8: #B2B2B2;
+  --c9: #CCCCCC;
+  --c10:#DEDEDE;
+  --c11:#EDEDED;
+  --c12:#F7F7F7;
+  --c13:#ffffff;
+  --p1: #C83015;
+  --p2: #F24F1A;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-sizing: border-box;
+  padding: 0 20px;
+  gap: 120px;
+}
+
+body{
+  margin: 0px;
+  font-family: Fira Sans;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+p,h1,h2,h3,ul,li,a{
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
